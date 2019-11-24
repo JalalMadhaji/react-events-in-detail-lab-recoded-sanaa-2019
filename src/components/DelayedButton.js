@@ -3,10 +3,7 @@ import React, {Component} from 'react';
 
 export default class DelayedButton extends Component{
   handleDelay = (event) =>{
-    setTimeout(myFen,this.props.delay);
-    function myFen(){
-      this.props.onDelayedClick(event);
-    }
+    setTimeout(()=>this.props.onDelayedClick(event),this.props.delay);
   }
   render(){
     return(
