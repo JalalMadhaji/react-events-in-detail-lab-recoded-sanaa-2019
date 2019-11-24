@@ -9,7 +9,7 @@ export default class CoordinatesButton extends Component{
 
   render(){
     return(
-      <button onClick={getCoordinates}>click me</button>
+      <button onClick={this.getCoordinates}>click me</button>
     );
   }
 }
